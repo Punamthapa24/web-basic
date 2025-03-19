@@ -1,0 +1,25 @@
+img {
+    border-radius: 80%;
+    height: 200px;
+}
+.img-square{
+    border-radius: 10%;
+    height: 200px;
+}
+button{
+    background-color: lightblue;
+    padding: 5px;
+    text-align: center;
+    width: 30%;
+    color: brown;
+    border-color: blue;
+}
+#inputAddress{
+    width: 40%;
+}
+#inputPassword4{
+    width: 20%;
+}
+#inputEmail4{
+    width: 20%;
+}
