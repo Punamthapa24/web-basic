@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Day 5</title>
+</head>
+
+<body>
+    <h1>Welcome to Day 5</h1>
+    <h2>What is Javascript?</h2>
+    <p>JavaScript is a programming language that brings websites to life. It enables interactive features like
+        animations, form
+        validations, and dynamic content updates. It's versatile, running on both web browsers and servers (with
+        Node.js), and forms
+        the foundation of modern web development alongside HTML and CSS.</p>
+    <h2>Why JavaScript was introduced?</h2>
+    <p>JavaScript was introduced in 1995 by Brendan Eich at Netscape to bring interactively and dynamic behaviour to web
+        pages.</p>
+    <h4>Here’s some reasons why JavaScript was introduced:</h4>
+    <ul>
+        <li>
+            <h3>Interactivity:</h3>To enable features like buttons, forms, and animations that respond to user actions.
+        </li>
+        <li>
+            <h3>Client-Side Functionality:</h3>To offload tasks from the server to the browser, improving performance
+            and reducing server load.
+        </li>
+        <li>
+            <h3>Ease of Use:</h3>To provide a simple programming language that could be understood and used by
+            non-programmers, making web development more accessible.
+        </li>
+        <li>
+            <h3>Cross-Platform Support:</h3>To work across different operating systems and browsers without requiring
+            additional software.
+        </li>
+    </ul>
+    <p>Here we print numbers from 1-500.</p>
+    <pre>
+            let titleH1 = document.getElementById("title");
+            titleH1.style.color = "green";
+            titleH1.style.fontFamily = "Helvetica";
+            titleH1.innerText = "Numbers from 1 to 500" ;
+            let numbersDiv = document.getElementById("numbers");
+         let numbersHtml = "";
+         for (let i = 1; i <= 500; i++) {
+             numbersHtml = numbersHtml + "&lt;h2&gt;  class='badge text-bg-danger'>"+i+"&lt;/h2&gt;";
+         }
+         numbersDiv.innerHTML = numbersHtml;
+         
+        </pre>
+        <p>Here we print numbers from 1-upto. </p>
+        <pre>
+            let titleH1 = document.getElementById("title");
+titleH1.style.color = "green";
+titleH1.style.fontFamily = "Helvetica";
+
+function printNumbers(){
+   let upto = document.getElementById("UpperRange").value
+   titleH1.innerText = "Numbers from 1 to" + upto;
+   let numbersDiv = document.getElementById("numbers");
+let numbersHtml = "";
+for (let i = 1; i <= upto; i++) {
+    numbersHtml = numbersHtml + "&lt;h2&gt;  class='badge text-bg-danger'>"+i+"&lt;/h2&gt;";
+}
+numbersDiv.innerHTML = numbersHtml;
+}
+    </pre>
+</body>
+
+</html>
