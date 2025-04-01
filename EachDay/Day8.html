@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Day 8</title>
+</head>
+
+<body>
+    <h2>Welcome to Day 8</h2>
+    <p>Here we discuss about OOP.</p>
+    <ul>
+        <li>First of all we make a new file with the name of 'Room.cs' in Consoleapp directory.
+            In this we define some fields.
+        </li>
+        <pre>
+                <code>
+                    public class Room
+                    {
+                        public double widthFt;
+                        public double lengthFt;
+                        public double heigthFT;
+                        public string paintColor;   
+                        public byte floor;
+                    }
+                </code>
+            </pre>
+            <li>Then in another file 'program.cs' we make new method() to call 'Room' fieldset.</li>
+            <pre>
+                Room r1 = new Room();
+                r1.paintColor = "Green";
+                r1.floor = 3;
+                r1.lengthFt = 15.5;
+                r1.widthFt = 12.4;
+                r1.heigthFT = 8;
+                var info = $"Hey guys we have a room in floor {floor} which is painted {paintColor}. It's dimension is {lengthFt}x{widthFt}x{heigthFT}.";
+                Console.WriteLine(info);
+            </pre>   
+            <li>There is another way to call it's field by using parameterized constructor. Inside the 'Room' class we have to pass argument
+                in constructor in 'Room.cs' file:
+            </li>
+            <pre>
+                public Room(string color, byte f, double l, double w, double h)
+                {
+                    paintColor = color;
+                    floor = f;
+                    lengthFt = l;
+                    widthFt = w;
+                    heigthFT = h;
+                }
+            </pre>
+            <li>To display above code we have to make new method to call this information in 'Room.cs':</li>
+            <pre>
+                public void DisplayInfo()
+                {
+                    var info = $"Hey guys we have a room in floor {floor} which is painted {paintColor}. It's dimension is {lengthFt}x{widthFt}x{heigthFT}.";
+                    Console.WriteLine(info);
+                }
+            </pre>
+            <li>We also inherit the features of one class from another class. Here we inherit the features of 'Room'
+                for 'HotelRoom'. So, make another class with name 'HotelRoom.cs'.
+            </li>
+            <pre>
+                public class HotelRoom : Room
+                {
+
+                }
+            </pre>
+            <li>To enable this inherit features we have to add default constructor in 'Room.cs' within the class.</li>
+            <pre>
+                public Room1(){
+
+                }
+            </pre>
+            <li>'HotelRoom' class can have additional features, so we can add additional fields in it.</li>
+            <pre>
+                public class HotelRoom : Room1{
+                    public byte beds;
+                    public bool hasAC;
+                    public bool attachedWashroom;
+                }
+            </pre>
+        </ul>          
+</body>               
+</html>          
+    
+
+
